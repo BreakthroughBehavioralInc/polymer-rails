@@ -21,13 +21,11 @@ Gem::Specification.new do |spec|
     spec.requirements << "jar org.jsoup:jsoup, 1.8.3"
     spec.add_development_dependency 'ruby-maven', '>= 3.1.1.0'
   else
-    spec.add_runtime_dependency "nokogiri", "~> 1.6"
-    # lock nokogumbo to 1.4.2, looks like nokogumbo 1.4.3 deletes template tags from custom components
-    spec.add_runtime_dependency "nokogumbo", "1.4.2"
+    spec.add_runtime_dependency "nokogiri", "~> 1.12"
   end
 
   spec.add_runtime_dependency "rails",    ">= 3.1.0"
-  spec.add_runtime_dependency "sprockets", "~> 3.0"
+  spec.add_runtime_dependency "sprockets", "~> 4.0"
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake",    "~> 0"
   spec.add_development_dependency "rspec",    "~> 3.0"
